@@ -1,5 +1,3 @@
-# Docker-Guide
-
 # Docker를 활용한 PyTorch 프로젝트 배포 가이드
 
 이 문서는 PyTorch 기반 프로젝트를 Docker 컨테이너로 개발하고 배포하는 전체 과정을 설명합니다.
