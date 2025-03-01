@@ -47,7 +47,7 @@ FROM pytorch/pytorch:latest
 
 #### 예시 명령어:
 ```bash
-docker run -it --rm pytorch/pytorch:latest bash
+docker run -it --rm --name test_torch pytorch/pytorch:latest
 ```
 
 > **설명:**
