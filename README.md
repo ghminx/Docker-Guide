@@ -141,11 +141,30 @@ docker run -d -p 8501:8501 my_pytorch_webapp
 docker tag my_pytorch_webapp your_dockerhub_username/my_pytorch_webapp
 docker push your_dockerhub_username/my_pytorch_webapp
 ```
+
+#### 예시
+```bash
+# Docker Hub에 로그인
+docker login
+
+# 이미지에 태그 지정
+docker tag unsloth-docker:latest geunhongmin/unsloth-docker:latest
+
+# 이미지를 Docker Hub에 push
+docker push geunhongmin/unsloth-docker:latest
+
+# 로그아웃 (선택사항)
+docker logout
+```
+
+
+
 #### 이후 다른 환경에서 다음 명령어로 실행:
 ```bash
 docker pull your_dockerhub_username/my_pytorch_webapp
 docker run -d -p 8501:8501 your_dockerhub_username/my_pytorch_webapp
 ```
+dd
 
 ### 6.2 클라우드 배포 (선택 사항)
 AWS EC2, Google Cloud Run, Azure Container Apps 등에서 Docker 컨테이너를 실행하여 서비스를 배포할 수 있습니다.
