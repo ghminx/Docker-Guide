@@ -49,6 +49,8 @@ docker run -it --rm --gpus all -v C:/test:/app pytorch/pytorch:latest bash
 ```
 > **설명:**
 > - `-v C:/project:/app`는 로컬 `C:\project` 폴더를 컨테이너 내부의 `/app` 디렉토리에 연결합니다.
+> - `--gpus all` 은 docker container 내부에서 gpu를 사용할수있게 합니다
+> - `--rm` 은 container가 종료되면 자동으로 삭제합니다
 > - 이 상태에서 컨테이너 내에서 `train.py`, `predict.py`, `app.py` 등을 수정하여 작업할 수 있습니다.
 
 ---
